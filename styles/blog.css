@@ -1,0 +1,60 @@
+main .carousel.slide {
+    width: 100%;
+    margin-top: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+
+body {
+    overflow: -moz-scrollbars-none;
+}
+
+
+h1 {
+    text-align: center;
+    padding:20px;
+}
+
+p {
+    font-size: 20px;
+    text-indent:20px;
+    text-align: justify;
+}
+
+.carousel.slide {
+    margin-bottom: 0px;
+}
+
+main .carousel-control-next, main .carousel-control-prev {
+    width: 5%;
+}
+
+
+
+.blog_photo {
+    width: 90%;
+}
+
+.wrapper_small_inner>div:last-child {
+    width: 90%;
+    padding-bottom: 0px;
+}
+
+.wrapper_small_inner {
+    margin-top: 20px;
+}
+
+span.carousel-control-next-icon, span.carousel-control-prev-icon {
+    position: fixed;
+    top: 50%;
+}
+
+#par6, #par7, #par8 {
+        min-height: 100vh;       
+}

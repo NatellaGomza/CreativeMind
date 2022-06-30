@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="fontawesome-free-5.15.3-web\fontawesome-free-5.15.3-web\css\all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link href="bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title> Services | Creative Mind </title>
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/Common.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="top_header">
+                <div class="logo">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA2CAYAAAB5u+FtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA1xpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDM0MiwgMjAxMC8wMS8xMC0xODowNjo0MyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpEODE1MDc5NDVGRjBFMzExOUVFM0VGOUQwQzg5NEYxNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowQ0REOTA0MDA0MTYxMUVDOEJEREUyM0E4M0M4RDYwRSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowQ0REOTAzRjA0MTYxMUVDOEJEREUyM0E4M0M4RDYwRSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REExQjlERTkwMTBDRTcxMTlDNzI4MDkyQURDNDlCMTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDgxNTA3OTQ1RkYwRTMxMTlFRTNFRjlEMEM4OTRGMTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRm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" alt="Icon with logo" title="The logo">
+                </div>
+                <div class="logo_header">
+                    creative <span> mind </span>
+                </div>
+                <nav class="menu">
+                    <input type="checkbox" id="menu_check">
+                    <label for="menu_check" class="menu_check">
+                        <i class="fas fa-bars fa-2x"></i>
+                        <i class="fas fa-times fa-2x"></i>
+                    </label>
+                    <div class="accordion accordion-flush hidden_menu accordeon_menu" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <a href="Index.html#par1" title="Home" class="mainlinks"> Home </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <a href="Index.html#par2" title="About us" class="mainlinks"> About </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                     Services
+                                    </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="Services.html#par9" title="Web development"> Web development </a>
+                                    <a href="Services.html#par10" title="Website maintenance"> Website maintenance </a>
+                                    <a href="Services.html#par11" title="SEO"> SEO </a>
+                                    <a href="Services.html#par12" title="Other Technologies"> Other Technologies </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <a href="Index.html#par3" title="Works" class="mainlinks"> Works </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <a href="Index.html#par4" title="Blog" class="mainlinks"> Blog </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <a href="Index.html#par5" title="Contacts" class="mainlinks"> Contacts </a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="hidden_menu dropdown_menu">
+                        <ul>
+                            <li> <a href="Index.html#par1" title="Home" class="mainlinks"> Home </a> </li>
+                            <li> <a href="Index.html#par2" title="About us" class="mainlinks"> About </a> </li>
+                            <li>
+                                <div class="dropdown">
+                                    <label class="btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                                        aria-expanded="false">
+                                        <a href="Services.html#par9" title="Services">
+                                            Services </a>
+                                    </label>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><label class="dropdown-item" type="button">
+                                                <a href="Services.html#par9" title="Web development"> Web development
+                                                </a></label></li>
+                                        <li><label class="dropdown-item" type="button">
+                                                <a href="Services.html#par10" title="Website maintenance"> Website
+                                                    maintenance </a></label>
+                                        </li>
+                                        <li><label class="dropdown-item" type="button">
+                                                <a href="Services.html#par11" title="SEO"> SEO </a></label></li>
+                                        <li><label class="dropdown-item" type="button">
+                                                <a href="Services.html#par12" title="Other Technologies"> Other
+                                                    Technologies </a></label></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li> <a href="Index.html#par3" title="Works" class="mainlinks"> Works </a> </li>
+                            <li> <a href="Index.html#par4" title="Blog" class="mainlinks"> Blog </a> </li>
+                            <li> <a href="Index.html#par5" title="Contacts" class="mainlinks"> Contacts </a> </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="secondary">
+            <div id="par9">
+                <img src="images/services_wd.jpg" alt="Banner for photo of workers" title="Our Team">
+                <div class="header white texts"> website development </div>
+            </div>
+            <input type="checkbox" id="one" class="article">
+            <label for="one"> landing page </label>
+            <article>
+                <div class="text_wd">
+                    <p> Landing page from 600 BYN ($300) </p>
+                    <p> One long selling page, spectacular design, the fastest loading, call-to-action buttons, feedback
+                        forms without unnecessary fields and reliable delivery of each application. The cost of
+                        developing a landing page may differ from the standard depending on what features your
+                        single-page site has. </p>
+                </div>
+                <div>
+                    <div class="wrapper_article">
+                        <div class="content_article">
+                            <div class="text_article">
+                                <img src="data:image/webp;base64,UklGRlAEAABXRUJQVlA4WAoAAAAQAAAAfwAAfwAAQUxQSHUDAAAB16IwkmRIjTnkH/H5U4iY/yzxFaZmo4kpDMgGDVJYFWaDAcIcoAa3EoMwhReo29Z2SJJOmW3btq38ouyq5HP/lxLxfe8X8UY2Zn5E9N+B20iKlBz1YddCz72B/xFaBKJ25cwje8KYUqILdxoTxjWAK8c1bj5wRFM4+gDN4eRd445CNoND7AGN3fjEnNCezRkZCf4bxGaL5q7aP/dj/SVSOi+MecYf1371er+u0YReeKWSL6lfL1zT4NGxY48GauKhE37pEcBj/aR2vdDVMsCyutSvG44BHNMRtZtNbXPvlx4DzRbmgLK2Y3rL42PHHg90ldqtEmTW2m0SXqrkC+xOdbtT2JQgI12NcO1nt/sz6/FLmYeSE2rw3HA0Gp7HYluYXNPrN1qfxGJLeKqt2ZlNPcFiOzjT12W4pMFZ0raDiUJvAd5pdYK0reChducB5nb0gKS5mA01c7Kr65S8ot4pUlaxzl3r4K2dH/pIxU/qkLKKOWC8P0O3dqa73Wki3tP+IhUX9nSXhJbCmqde3khvqHrsUDeIeF1HJ4jrkouj0XB0iYpf9ZmoX/SNuB6Z29azZ9qZp+RtHSwRdXFft4nqkQ9am5xc1QcAlg90i4S3dXiMmA65rv5ZON0rHW2W3Qxf9ZWY/ljc032A+9pfgps6Ok7SY4e6SUx3fNZPSv7UF9tpDtyNDgKyWZHNIoM7kfP6+OEen/QLkz/0iapVzAFltGPn+GHsrDp+/KppzAPRhQCqBJnFqJnv0WPausyVfFBZCIGsMwjq54H2Y0PGusyXnAh6R0VXnOnHR/wlDc5i9nRflynpislVvSfizKaekOETbc0C4Irn2poj4hutT5Lh5Fp1aXTE+ehiBxdGw/NkeW44ugjgiQ29SXTxkkxfagPAE52V6XgXxRSZThUdgFzMhioerGKesNZx6BJzwHh/lm4LObBQurBuTyNBDgxqEifFv05WZLOI0+DwKQCqmAPKaCdOg8MnxMnoHpveiowEYxIfTzeLj6fbXPx+yDwKCwy2jIDBTDL691hYt5d18LaJ6I5KpPT9Fmue/+xYkc0ijpP/HfaAMtqJowaNEzKas5mgsa9WDHvrY5PG9EKTbwkAHmjavyBsBofYzx7rOHSJOWCsv0RK34U1z5jCiQ0S5MRAYzhyTOPMWgidRBdyZkgm/B+hAAAAVlA4ILQAAACQCgCdASqAAIAAPlEmj0WkoyIUBABIBQSyt26hQP4A7QH+AwgD/Ae3/dwH6AAMJBTAcaq3xNLb5URSMG0Nmy/7ONxyItlKi+SGIotDkRbKVFmtyQC127xNLb5OrMAA/v7sHDWL//HcG/+vvcidALrcv3Vv5+2oW+5//q9fmkyIROFIuxT3yQtPnxJ2WM7NAAAAFN9Qx//JBG/+pB5XKqwjwJ0oM/z9uQuHT//WC3OJirAAAAA=" alt="Banner for landing page" title="Premium design">
+                                <div class="header"> Premium design </div>
+                                <p>For a single-page site, design is very important like no one else. Landing usually
+                                    has only one chance to interest and convince a visitor. Therefore, we will develop
+                                    an impressive and professional design for you. </p>
+                            </div>
+                            <div class="text_article">
+                                <img src="data:image/webp;base64,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" alt="Banner for landing page" title="Customer support">
+                                <div class="header"> Customer support </div>
+                                <p> We will ensure trouble-free operation of the site. We’ll fix any mistake for free,
+                                    for any revision we will offer options. Consultation on the site from 9 to 18.00 — 7
+                                    days a week. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <input type="checkbox" id="two">
+            <label for="two" class="article"> online store </label>
+            <article>
+                <div class="text_wd">
+                    <p> Online store from 2000 BYN ($1000) </p>
+                    <p> We are ready to offer our customers an online store consisting of 7 main pages: home page,
+                        product categories, subcategories, product card, ordering page, user account, as well as a page
+                        with customer contacts.
+                        In addition, we will prepare an effective design, will optimize the site to work as quickly as
+                        possible. In addition, convenient services such as online consultant, visitor statistics and a
+                        map will be connected to the site.
+                    </p>
+                </div>
+                <div>
+                    <div class="wrapper_article">
+                        <div class="content_article">
+                            <div class="text_article">
+                                <img src="data:image/webp;base64,UklGRlAEAABXRUJQVlA4WAoAAAAQAAAAfwAAfwAAQUxQSHUDAAAB16IwkmRIjTnkH/H5U4iY/yzxFaZmo4kpDMgGDVJYFWaDAcIcoAa3EoMwhReo29Z2SJJOmW3btq38ouyq5HP/lxLxfe8X8UY2Zn5E9N+B20iKlBz1YddCz72B/xFaBKJ25cwje8KYUqILdxoTxjWAK8c1bj5wRFM4+gDN4eRd445CNoND7AGN3fjEnNCezRkZCf4bxGaL5q7aP/dj/SVSOi+MecYf1371er+u0YReeKWSL6lfL1zT4NGxY48GauKhE37pEcBj/aR2vdDVMsCyutSvG44BHNMRtZtNbXPvlx4DzRbmgLK2Y3rL42PHHg90ldqtEmTW2m0SXqrkC+xOdbtT2JQgI12NcO1nt/sz6/FLmYeSE2rw3HA0Gp7HYluYXNPrN1qfxGJLeKqt2ZlNPcFiOzjT12W4pMFZ0raDiUJvAd5pdYK0reChducB5nb0gKS5mA01c7Kr65S8ot4pUlaxzl3r4K2dH/pIxU/qkLKKOWC8P0O3dqa73Wki3tP+IhUX9nSXhJbCmqde3khvqHrsUDeIeF1HJ4jrkouj0XB0iYpf9ZmoX/SNuB6Z29azZ9qZp+RtHSwRdXFft4nqkQ9am5xc1QcAlg90i4S3dXiMmA65rv5ZON0rHW2W3Qxf9ZWY/ljc032A+9pfgps6Ok7SY4e6SUx3fNZPSv7UF9tpDtyNDgKyWZHNIoM7kfP6+OEen/QLkz/0iapVzAFltGPn+GHsrDp+/KppzAPRhQCqBJnFqJnv0WPausyVfFBZCIGsMwjq54H2Y0PGusyXnAh6R0VXnOnHR/wlDc5i9nRflynpislVvSfizKaekOETbc0C4Irn2poj4hutT5Lh5Fp1aXTE+ehiBxdGw/NkeW44ugjgiQ29SXTxkkxfagPAE52V6XgXxRSZThUdgFzMhioerGKesNZx6BJzwHh/lm4LObBQurBuTyNBDgxqEifFv05WZLOI0+DwKQCqmAPKaCdOg8MnxMnoHpveiowEYxIfTzeLj6fbXPx+yDwKCwy2jIDBTDL691hYt5d18LaJ6I5KpPT9Fmue/+xYkc0ijpP/HfaAMtqJowaNEzKas5mgsa9WDHvrY5PG9EKTbwkAHmjavyBsBofYzx7rOHSJOWCsv0RK34U1z5jCiQ0S5MRAYzhyTOPMWgidRBdyZkgm/B+hAAAAVlA4ILQAAACQCgCdASqAAIAAPlEmj0WkoyIUBABIBQSyt26hQP4A7QH+AwgD/Ae3/dwH6AAMJBTAcaq3xNLb5URSMG0Nmy/7ONxyItlKi+SGIotDkRbKVFmtyQC127xNLb5OrMAA/v7sHDWL//HcG/+vvcidALrcv3Vv5+2oW+5//q9fmkyIROFIuxT3yQtPnxJ2WM7NAAAAFN9Qx//JBG/+pB5XKqwjwJ0oM/z9uQuHT//WC3OJirAAAAA=" alt="Banner for online store" title="Premium design">
+                                <div class="header"> Premium design </div>
+                                <p>We are ready to offer the creation of unique high quality designs, prepared by
+                                    experienced web designers from our team.
+                                </p>
+                            </div>
+                            <div class="text_article">
+                                <img src="data:image/webp;base64,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" alt="Banner for online store" title="Customer support">
+                                <div class="header"> Customer support </div>
+                                <p> We guarantee the perfect operation of your online store. Work support seven days a
+                                    week, from 9.00 to 18.00 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <input type="checkbox" id="three">
+            <label for="three" class="article"> corporate website </label>
+            <article>
+                <div class="text_wd">
+                    <p> Corporate site from 1000 BYN ($500) </p>
+                    <p> The site has no restrictions on the number of pages and the client can always expand and
+                        complement the content, we offer a spectacular design, the fastest loading. Also for your site
+                        we will connect such services as: On-line consultant, Map, Visitor statistics.
+                    </p>
+                </div>
+                <div>
+                    <div class="wrapper_article">
+                        <div class="content_article">
+                            <div class="text_article">
+                                <img src="data:image/webp;base64,UklGRlAEAABXRUJQVlA4WAoAAAAQAAAAfwAAfwAAQUxQSHUDAAAB16IwkmRIjTnkH/H5U4iY/yzxFaZmo4kpDMgGDVJYFWaDAcIcoAa3EoMwhReo29Z2SJJOmW3btq38ouyq5HP/lxLxfe8X8UY2Zn5E9N+B20iKlBz1YddCz72B/xFaBKJ25cwje8KYUqILdxoTxjWAK8c1bj5wRFM4+gDN4eRd445CNoND7AGN3fjEnNCezRkZCf4bxGaL5q7aP/dj/SVSOi+MecYf1371er+u0YReeKWSL6lfL1zT4NGxY48GauKhE37pEcBj/aR2vdDVMsCyutSvG44BHNMRtZtNbXPvlx4DzRbmgLK2Y3rL42PHHg90ldqtEmTW2m0SXqrkC+xOdbtT2JQgI12NcO1nt/sz6/FLmYeSE2rw3HA0Gp7HYluYXNPrN1qfxGJLeKqt2ZlNPcFiOzjT12W4pMFZ0raDiUJvAd5pdYK0reChducB5nb0gKS5mA01c7Kr65S8ot4pUlaxzl3r4K2dH/pIxU/qkLKKOWC8P0O3dqa73Wki3tP+IhUX9nSXhJbCmqde3khvqHrsUDeIeF1HJ4jrkouj0XB0iYpf9ZmoX/SNuB6Z29azZ9qZp+RtHSwRdXFft4nqkQ9am5xc1QcAlg90i4S3dXiMmA65rv5ZON0rHW2W3Qxf9ZWY/ljc032A+9pfgps6Ok7SY4e6SUx3fNZPSv7UF9tpDtyNDgKyWZHNIoM7kfP6+OEen/QLkz/0iapVzAFltGPn+GHsrDp+/KppzAPRhQCqBJnFqJnv0WPausyVfFBZCIGsMwjq54H2Y0PGusyXnAh6R0VXnOnHR/wlDc5i9nRflynpislVvSfizKaekOETbc0C4Irn2poj4hutT5Lh5Fp1aXTE+ehiBxdGw/NkeW44ugjgiQ29SXTxkkxfagPAE52V6XgXxRSZThUdgFzMhioerGKesNZx6BJzwHh/lm4LObBQurBuTyNBDgxqEifFv05WZLOI0+DwKQCqmAPKaCdOg8MnxMnoHpveiowEYxIfTzeLj6fbXPx+yDwKCwy2jIDBTDL691hYt5d18LaJ6I5KpPT9Fmue/+xYkc0ijpP/HfaAMtqJowaNEzKas5mgsa9WDHvrY5PG9EKTbwkAHmjavyBsBofYzx7rOHSJOWCsv0RK34U1z5jCiQ0S5MRAYzhyTOPMWgidRBdyZkgm/B+hAAAAVlA4ILQAAACQCgCdASqAAIAAPlEmj0WkoyIUBABIBQSyt26hQP4A7QH+AwgD/Ae3/dwH6AAMJBTAcaq3xNLb5URSMG0Nmy/7ONxyItlKi+SGIotDkRbKVFmtyQC127xNLb5OrMAA/v7sHDWL//HcG/+vvcidALrcv3Vv5+2oW+5//q9fmkyIROFIuxT3yQtPnxJ2WM7NAAAAFN9Qx//JBG/+pB5XKqwjwJ0oM/z9uQuHT//WC3OJirAAAAA=" alt="Banner for corporate website" title="Premuim design">
+                                <div class="header"> Premium design </div>
+                                <p> We provide services to create great designs for corporate sites by experienced
+                                    designers.
+                                </p>
+                            </div>
+                            <div class="text_article">
+                                <img src="data:image/webp;base64,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" alt="Banner for corporate website" title="Customer support">
+                                <div class="header"> Customer support </div>
+                                <p> We will ensure trouble-free operation of the corporate site. Consultation from 9 to
+                                    18.00 — 7 days a week.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div id="par10">
+                <img src="images/services_wm.jpg" alt="Banner for website maintenance" title="Support">
+                <div class="header white texts"> website maintenance </div>
+            </div>
+            <input type="checkbox" id="four" class="article">
+            <label for="four"> finalization of sites </label>
+            <article>
+                <div>
+                    <h1> What is the the completion of the site? </h1>
+                    <p> Finalization of site - this is additional work on the site, namely redesign, layout, programming
+                        and other work that we are ready to do for you, perhaps, on any type of site. At the same time,
+                        you pay only for the hours we spent on revision, no monthly subscriptions. We also provide
+                        services for the technical refinement of sites without CMS or on any other platforms by
+                        agreement with the customer, while the cost remains the same as if it were a standard service
+                        for the technical optimization of the site.
+                    </p>
+                </div>
+            </article>
+            <div id="par11">
+                <video autoplay="" loop="" muted="" playslinline="" bdt-cover="" class="bdt-cover" style="width: 100%;">
+                    <source src="videos/Seo.mp4" type="video/mp4">
+                </video>
+                <div class="header white texts"> seo </div>
+            </div>
+            <input type="checkbox" id="five" class="article">
+            <label for="five"> search engine optimization </label>
+            <article>
+                <div class="text_wd">
+                    <p> SEO from 100 BYN ($50) </p>
+                    <p> The main task of SEO is to increase the flow of targeted visitors. Website promotion will not
+                        only increase the company’s popularity and brand popularity, but also attract new customers. We
+                        will prepare a good website promotion strategy, taking into account the goals and objectives of
+                        the client, choosing the right query core. Based on it, unique commercial texts will be created
+                        that motivate people to contact our customer.
+                    </p>
+                </div>
+                <div>
+                    <div class="wrapper_article">
+                        <div class="content_article">
+                            <div class="text_article">
+                                <img src="data:image/webp;base64,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" alt="Banner for SEO" title="Result">
+                                <div class="header"> Result </div>
+                                <p> The main thing is to determine the level of competition in the market niche. We will
+                                    cluster the semantic core and make a plan for creating new landing pages. We will
+                                    give recommendations for further technical improvement of the site.
+                                </p>
+                            </div>
+                            <div class="text_article">
+                                <img src="data:image/webp;base64,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" alt="Banner for SEO" title="Report every month">
+                                <div class="header"> Report every month </div>
+                                <p> We communicate with customers using a project management system. Here customers can
+                                    monitor the tasks and the development process of the site. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <input type="checkbox" id="six">
+            <label for="six" class="article"> website optimization for social networks </label>
+            <article class="six">
+                <div class="text_wd">
+                    <p> The role of SMM and what it is. </p>
+                    <p> Social Media Marketing, this is how the abbreviation SMM stands. In a nutshell, it refers to the
+                        promotion of a brand or product in the most common social networks. This is done in order to
+                        learn about the company as many people on the Internet as possible, and to increase the number
+                        of subscribers to the company’s page on the social network. The main thing that is necessary for
+                        successful promotion is the search for the target audience of the brand itself. It is necessary
+                        to focus on it when promoting the company. In posts on the page you should keep the corporate
+                        style of presenting information inherent in the company. With the help of content of different
+                        formats – texts, video and audio, a content plan is prepared that will be optimal for the group
+                        or public page. It is necessary to focus on a social network in which the most target audience
+                        for the company. It will be active on the wall of the group. With the help of social networks,
+                        you can promote and advertise the brand. To do this,you need to monitor the activity of users
+                        their reaction to the published content, the number of likes, as well as reposts, reaction to
+                        different topics of posts. The content plan must be filled not only with information and trade
+                        offers, but also contain an entertainment component. It is also important for the growth of the
+                        audience to hold various promotions and drawings.
+                    </p>
+                </div>
+                <div class="elementor-row">
+                    <div class="elementor-price-table">
+                        <div class="elementor-price-table_small_wrapper">
+                            <div class="elementor-price-table_header">
+                                <h2 class="elementor-price-table_heading"> standard </h2>
+                                <span class="elementor-price-table_subheading"> 1 social network </span>
+                            </div>
+                            <div class="elementor-price-table_price">
+                                <span class="elementor-price-table_before"> BYN </span>
+                                <span class="elementor-price-table_integer-part"> 320 </span>
+                                <span class="elementor-price-table_excluded"> monthly </span>
+                            </div>
+                        </div>
+                        <ul class="elementor-price-table_features-list">
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> The development of the cover design and publications </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Subscribers: 500-1000 </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Posts: at least 1 per day </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Repost: at least 10 per month </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Repost in large public: at least 2 per month </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Communication with subscribers, comments </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="elementor-price-table-wrapper">
+                        <div class="elementor-price-table">
+                            <div class="elementor-price-table_small_wrapper">
+                                <div class="elementor-price-table_header">
+                                    <h2 class="elementor-price-table_heading"> maximum </h2>
+                                    <span class="elementor-price-table_subheading"> 1 social network </span>
+                                </div>
+                                <div class="elementor-price-table_price">
+                                    <span class="elementor-price-table_before"> BYN </span>
+                                    <span class="elementor-price-table_integer-part"> 550 </span>
+                                    <span class="elementor-price-table_excluded"> monthly </span>
+                                </div>
+                            </div>
+                            <ul class="elementor-price-table_features-list">
+                                <li>
+                                    <div>
+                                        <i class="fa fa-check"></i>
+                                        <span> The development of the cover design and publications </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="fa fa-check"></i>
+                                        <span> Subscribers: 1000-2000 </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="fa fa-check"></i>
+                                        <span> Posts: at least 3 per day </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="fa fa-check"></i>
+                                        <span> Repost: at least 20 per month </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="fa fa-check"></i>
+                                        <span> Repost in large public: at least 5 per month
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="fa fa-check"></i>
+                                        <span> Communication with subscribers, comments </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class=" fa fa-check"></i>
+                                        <span> Unique content </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="fa fa-check"></i>
+                                        <span> Writing positive reviews (SERM) </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="fa fa-check"></i>
+                                        <span> Targeted advertising </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="elementor_price_table_ribbon">
+                            <div class="elementor_price_table_ribbon_inner">
+                                <p class="text-indent_none"> popular </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-price-table last">
+                        <div class="elementor-price-table_small_wrapper">
+                            <div class="elementor-price-table_header">
+                                <h2 class="elementor-price-table_heading"> premium </h2>
+                                <span class="elementor-price-table_subheading"> 2 social network </span>
+                            </div>
+                            <div class="elementor-price-table_price">
+                                <span class="elementor-price-table_before"> BYN </span>
+                                <span class="elementor-price-table_integer-part"> 900 </span>
+                                <span class="elementor-price-table_excluded"> monthly </span>
+                            </div>
+                        </div>
+                        <ul class="elementor-price-table_features-list">
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Unique strategy </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Maximum reach of people </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Maximum subscriber growth </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Image formation </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Branding </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-check"></i>
+                                    <span> Sales promotion </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <div id="par12">
+                <img src="images/services_ot.jpg" alt="Banner for other technologies" title="Design">
+                <div class="header white texts"> Other technologies </div>
+            </div>
+            <input type="checkbox" id="eight" class="article">
+            <label for="eight"> web design </label>
+            <article>
+                <div>
+                    <h1> Website design </h1>
+                    <p> This is the first thing that the user sees when entering the website. This
+                        is the first assessment
+                        of your visitors and competitors. Colors, original shapes and elements — all
+                        this is an
+                        identification system, the difference from other companies. The logo
+                        consists of illustration
+                        or symbol, graphic print design. A professional logo is the key to
+                        recognizing and attracting new
+                        customers. Corporate identity is one of the main marketing tools of the
+                        company, which for the
+                        client carries a sense of trust, guarantee and order. The style of the
+                        company must comply first
+                        of all with its industry and market positioning.
+                    </p>
+                </div>
+            </article>
+            <input type="checkbox" id="nine">
+            <label for="nine" class="article"> web ui ux design </label>
+            <article>
+                <div>
+                    <h1> Web ui ux design </h1>
+                    <p> Web UI UX Design — this is creation of a convenient environment (interface)
+                        for user and product
+                        interaction (website, application, etc.). Creating a convenient environment
+                        for interacting with
+                        the user has a lot of benefits, here are some of them:
+                    <ul class="list">
+                        <li> increase product efficiency </li>
+                        <li> increasing customer loyalty </li>
+                        <li> profit growth </li>
+                        <li> cost reduction </li>
+                        <li> saving your own resources </li>
+                        <li> and much more. </li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+        <footer class="secondary">
+            <div class="copyright"> &copy; Copyright 2021 by Creative minds. All rights reserved </div>
+        </footer>
+    </div>
+</body>
+
+</html>

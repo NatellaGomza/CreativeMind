@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="fontawesome-free-5.15.3-web\fontawesome-free-5.15.3-web\css\all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/blog.css">
+    <link href="bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title> Blog | Creative Mind </title>
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/Common.js"></script>
+    <script src="scripts/Blog.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="top_header">
+                <div class="logo">
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA2CAYAAAB5u+FtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA1xpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDM0MiwgMjAxMC8wMS8xMC0xODowNjo0MyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpEODE1MDc5NDVGRjBFMzExOUVFM0VGOUQwQzg5NEYxNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowQ0REOTA0MDA0MTYxMUVDOEJEREUyM0E4M0M4RDYwRSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowQ0REOTAzRjA0MTYxMUVDOEJEREUyM0E4M0M4RDYwRSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REExQjlERTkwMTBDRTcxMTlDNzI4MDkyQURDNDlCMTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDgxNTA3OTQ1RkYwRTMxMTlFRTNFRjlEMEM4OTRGMTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRm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" alt="Icon with logo" title="The logo">
+                </div>
+                <div class="logo_header">
+                    creative <span> mind </span>
+                </div>
+                <nav class="menu">
+                    <input type="checkbox" id="menu_check">
+                    <label for="menu_check" class="menu_check">
+                        <i class="fas fa-bars fa-2x"></i>
+                        <i class="fas fa-times fa-2x"></i>
+                    </label>
+                    <div class="accordion accordion-flush hidden_menu accordeon_menu" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <a href="Index.html#par1" title="Home" class="mainlinks"> Home </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <a href="Index.html#par2" title="About us" class="mainlinks"> About </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   Services
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="Services.html#par9" title="Web development"> Web development </a>
+                                    <a href="Services.html#par10" title="Website maintenance"> Website maintenance </a>
+                                    <a href="Services.html#par11" title="SEO"> SEO </a>
+                                    <a href="Services.html#par12" title="Other Technologies"> Other Technologies </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <a href="Index.html#par3" title="Works" class="mainlinks"> Works </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <a href="Index.html#par4" title="Blog" class="mainlinks"> Blog </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <a href="Index.html#par5" title="Contacts" class="mainlinks"> Contacts </a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="hidden_menu dropdown_menu">
+                        <ul>
+                            <li> <a href="Index.html#par1" title="Home" class="mainlinks"> Home </a> </li>
+                            <li> <a href="Index.html#par2" title="About us" class="mainlinks"> About </a> </li>
+                            <li>
+                                <div class="dropdown">
+                                    <label class="btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                                        aria-expanded="false">
+                                        <a href="Services.html#par9" title="Services">
+                                            Services </a>
+                                    </label>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><label class="dropdown-item" type="button">
+                                                <a href="Services.html#par9" title="Web development"> Web development
+                                                </a></label></li>
+                                        <li><label class="dropdown-item" type="button">
+                                                <a href="Services.html#par10" title="Website maintenance"> Website
+                                                    maintenance </a></label>
+                                        </li>
+                                        <li><label class="dropdown-item" type="button">
+                                                <a href="Services.html#par11" title="SEO"> SEO </a></label></li>
+                                        <li><label class="dropdown-item" type="button">
+                                                <a href="Services.html#par12" title="Other Technologies"> Other
+                                                    Technologies </a></label></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li> <a href="Index.html#par3" title="Works" class="mainlinks"> Works </a> </li>
+                            <li> <a href="Index.html#par4" title="Blog" class="mainlinks"> Blog </a> </li>
+                            <li> <a href="Index.html#par5" title="Contacts" class="mainlinks"> Contacts </a> </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="secondary">
+            <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-touch="false"
+                data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item" id="par6">
+                        <div class="wrapper_small_first">
+                            <div class="wrapper_small_inner">
+                                <div class="blog_photo">
+                                    <div class="date"> 8 <br> jul </div>
+                                </div>
+                                <div class="blog_context">
+                                    <h1> Development of unique logos </h1>
+                                    <p> If you look at the results of research on the topic of brands, you can conclude
+                                        that for several decades there has been a trend towards developing logos that
+                                        positively influence the opinion of a product. Why is this happening? To create
+                                        a corporate identity and develop an original logo, the designer selects
+                                        different
+                                        elements - text, graphic, color. By combining this into a single whole, a
+                                        product
+                                        is obtained that will become the image, the face of the company, without which
+                                        it
+                                        will be impossible to imagine its existence. Without creating this image, it is
+                                        difficult to calculate the company's chances of successful development, because
+                                        they will be minimal, unless they are monopolists in their field. The most
+                                        important
+                                        thing when developing a logo is to create such a design of the web page so as
+                                        not
+                                        to distract the attention of the site visitor, not to distract him from the page
+                                        content. The structure of the site must also meet these requirements, it must be
+                                        clear and easy to navigate. All products should be succinctly and clearly
+                                        described,
+                                        combined in general directions. So it is worth paying attention not only to the
+                                        design
+                                        of the web resource. Content plays a huge role. In this case, it is necessary
+                                        that all
+                                        information, even in general form, is displayed in the logo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="par7">
+                        <div class="wrapper_small_second">
+                            <div class="wrapper_small_inner">
+                                <div class="blog_photo">
+                                    <div class="date"> 15 <br> mar </div>
+                                </div>
+                                <div class="blog_context">
+                                    <h1> Corporate identity </h1>
+                                    <p> The corporate identity of a company is an individual, inherent only to her,
+                                        feature of the
+                                        organization, presented to the public. With its help, it becomes possible to
+                                        solve many very
+                                        important tasks for the company. For example, to influence potential customers,
+                                        the ability
+                                        to organize your production, as well as manage it. Thanks to logos based on an
+                                        individual style,
+                                        a person from the outside will be able to recognize and quickly identify all the
+                                        activities of
+                                        the company: what it produces, where it is located, how it advertises its
+                                        products. That is why
+                                        it is much easier for brands that are heard by everyone to bring new products to
+                                        the market,
+                                        since they are already familiar to users, which indirectly indicates the high
+                                        quality of new
+                                        products. The funny thing is that the quality of the same product from competing
+                                        companies is
+                                        often the same, but products from a well-known brand will be appreciated higher,
+                                        sometimes by
+                                        several orders of magnitude.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="par8">
+                        <div class="wrapper_small_third">
+                            <div class="wrapper_small_inner">
+                                <div class="blog_photo">
+                                    <div class="date"> 23 <br> okt </div>
+                                </div>
+                                <div class="blog_context">
+                                    <h1> The role of site design </h1>
+                                    <p> Having entered the site for the first time, the user immediately appreciates its
+                                        appearance. By and
+                                        large, the appearance of the site depends on whether the user will remain on it,
+                                        or leave forever.
+                                        irst of all, when we get to a new site, we strive to evaluate its external
+                                        characteristics, and only
+                                        then the content posted there. Today there are a large number of designs for web
+                                        resources, so the
+                                        question of which one to choose is quite acute.The number of people surfing the
+                                        Internet from smartphones
+                                        is growing steadily every year. That is why a modern website must be adapted to
+                                        any device, regardless
+                                        of its subject matter and field of activity. Otherwise, an inconvenient design
+                                        can simply scare awa
+                                        the visitor once and for all.Creating a website design is not an easy task, it
+                                        is quite painstaking and
+                                        requires a professional and responsible approach in order to get an excellent
+                                        result. To develop the
+                                        "face" of the site, you will need to take into account a huge number of factors.
+                                        Here are just a few of them:
+                                    <ul>
+                                        <li> The purpose of the site; </li>
+                                        <li> Target audience of the site; </li>
+                                        <li> Content posted on it; </li>
+                                        <li> Modern design trends, etc. </li>
+                                    </ul>
+                                    <p>
+                                        The definition of “good design” is highly subjective, since the same design can
+                                        be
+                                        good for different users,
+                                        mediocre for another, and unacceptable for a third. Nevertheless, most of the
+                                        requirements for web design can
+                                        be generalized - it should be memorable, original, should not cause rejection
+                                        when
+                                        viewed, have easy navigation,
+                                        colors and graphics should correspond to the purpose of the resource.
+                                        remembering
+                                        that the design of the site
+                                        itself must be modern, since what could be considered an advanced solution 5
+                                        years
+                                        ago is simply irrelevant today.
+                                        That is why, over time, the appearance of sites over the years needs to be
+                                        revised.
+                                        And only if the web design
+                                        fully complies with the above requirements - it is able to arouse the user's
+                                        interest, otherwise he will simply
+                                        ignore the site.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"> Previous </span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"> Next </span>
+                </button>
+            </div>
+        </main>
+        <footer class="secondary">
+            <div class="copyright"> &copy; Copyright 2021 by Creative minds. All rights reserved </div>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>

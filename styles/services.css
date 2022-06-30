@@ -1,0 +1,347 @@
+main .header.white {
+  padding: 10px 0px;
+  background-color: #26ab85;
+}
+
+
+article, input {
+  display: none;
+}
+
+p:not(.text-indent_none) {
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+main input:checked+label+article {
+  display: flex;
+}
+
+main.secondary {
+  margin-bottom: 20px;
+}
+
+main label {
+  display: block;
+  background-color: #ebebeb;
+  padding: 10px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #5e5e5e;
+}
+
+main label:after {
+  content: "+";
+  position: absolute;
+  right: 15px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+main label:hover {
+  background-color: rgb(167, 248, 226)
+}
+
+main input:checked+label:after {
+  content: "\2013";
+}
+
+article {
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+article>div {
+  flex-basis: 100%;
+}
+
+article .header {
+  padding-top: 10px;
+}
+
+article.six {
+  flex-flow: column wrap;
+}
+
+article.six .text_wd {
+  flex-basis: 100%;
+}
+
+.elementor-row {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.elementor-price-table {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 20px;
+}
+
+.elementor-price-table-wrapper {
+  position: relative;
+}
+
+.elementor-price-table_heading {
+  text-transform: uppercase;
+}
+
+.elementor_price_table_ribbon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+}
+
+.elementor_price_table_ribbon_inner {
+  background-color: #ffffff;
+  margin-top: 25px;
+  transform: translateY(-50%) translateX(-50%) translateX(25px) rotate(-135deg);
+  color: #00d8d5;
+  height: 100px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elementor_price_table_ribbon_inner P {
+  transform: rotate(90deg);
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text_wd p:first-child, .text_article .header {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #5d5c5c;
+  text-align: center;
+}
+
+main h1 {
+  text-align: center;
+  color: #5d5c5c;
+  font-size: 26px;
+}
+
+.wrapper_article {
+  width: 300px;
+  height: 320px;
+  border: 4px solid #26ab85;
+  overflow: hidden;
+  border-radius: 10%;
+  margin:0 auto;
+}
+
+.content_article {
+  width: 600px;
+  height: 320px;
+  display: flex;
+  transform: translateX(-300px);
+  transition: all 0.5s ease-out;
+}
+
+.text_article {
+  width: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text_article p {
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.text_article>div {
+  flex-basis: 100%;
+}
+
+article:not(.six) div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper_article:hover .content_article {
+  transform: translateX(0px);
+  transition: all 0.5s ease-out;
+}
+
+.elementor-price-table {
+  border-radius: 5px;
+  border: 1px solid #26ab85;
+}
+
+.elementor-price-table_header {
+  background-color: #26ab85;
+  padding: 30px 30px 26px 30px;
+  color: white;
+  text-align: center;
+}
+
+.elementor-price-table_price {
+  color: #333333;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 40px 0px;
+  background-color: #eeeeee;
+  justify-content: center;
+}
+
+.elementor-price-table_before {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.elementor-price-table_integer-part {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.elementor-price-table_excluded {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 26px;
+  position: absolute;
+  top: 90px;
+}
+
+.elementor-price-table ul {
+  list-style-type: none;
+  color: #26ab85;
+  font-size: 18px;
+  padding: 20px;
+  background-color: #eeeeee;
+  margin-bottom: 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.elementor-price-table .elementor-price-table_features-list i {
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+
+.elementor-price-table_features-list li:not(:first-child):before {
+  content: "";
+  display: block;
+  border: 0 solid hsla(0, 0%, 47.8%, .3);
+  border-top-style: solid;
+  border-top-color: #ddd;
+  border-top-width: 2px;
+  margin: 10px 12.5%;
+}
+
+.elementor-price-table_small_wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.list li {
+  list-style-type: none;
+  position: relative;
+}
+
+.list li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -20px;
+  top: 12px;
+  height: 2px;
+  width: 12px;
+  background-color: #26ab85;
+}
+
+.secondary>div{
+  position: relative;
+}
+
+main>div>img, video {
+  width:100%;
+  padding:10px 0px;
+  margin:0 auto;
+}
+
+.header.white.texts {
+  position: absolute;
+  bottom:40px;
+  width:100%;opacity:0.8;
+ 
+}
+
+.text_wd, p, h1, .elementor-row {
+  margin:10px;
+}
+
+@media all and (min-width:650px) {
+  article {
+    flex-flow: row nowrap;
+    margin:20px;
+  }
+
+
+  .elementor-price-table {
+    flex-flow: row nowrap;
+  }
+  .elementor-price-table_price {
+    border-right: 1px solid #26ab85;
+  }
+  .elementor-price-table ul {
+    border-radius: 0px 5px 5px 0px;
+  }
+  .elementor-price-table_small_wrapper .elementor-price-table_header, .elementor-price-table_small_wrapper .elementor-price-table_price {
+    flex-basis: 50%;
+  }
+  .elementor-price-table .elementor-price-table_small_wrapper {
+    flex-basis: 30%;
+  }
+  .elementor-price-table ul {
+    flex-basis: 70%;
+  }
+  .elementor-price-table.last .elementor-price-table_header {
+    padding: 38px;
+  }
+
+}
+
+@media all and (min-width:970px) {
+  .elementor-row {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .elementor-price-table.last .elementor-price-table_header {
+    padding: 28px;
+  }
+  .elementor-row>div {
+    flex-basis: 30%;
+  }
+  .elementor-price-table {
+    flex-flow: column nowrap;
+  }
+  .elementor-price-table_small_wrapper {
+    flex-flow: column nowrap;
+  }
+  .elementor-price-table_price {
+    border-right: none;
+  }
+  .elementor-price-table ul {
+    border-radius: 0px 0px 5px 5px;
+  }
+
+
+}

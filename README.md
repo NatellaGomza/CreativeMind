@@ -1,1 +1,1 @@
-# Diploma on HTML, CSS. Adaptive site.
+# Diploma on HTML, CSS. Adaptive website.

@@ -32,6 +32,10 @@ body {
     color: #ffffff;
 }
 
+header li a {
+    width:100%;
+}
+
 body.scroll {
     overflow: hidden;
 }
@@ -45,7 +49,6 @@ body.scroll {
 
 body a {
     text-decoration: none;
-    width:100%;
     color: white;
 }
 

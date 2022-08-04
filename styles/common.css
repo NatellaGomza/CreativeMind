@@ -87,6 +87,10 @@ header {
     padding: 0px 20px;
 }
 
+.links {
+    width:100%;
+}
+
 input[type="checkbox"] {
     display: none;
 }
